@@ -1,0 +1,174 @@
+<html>
+    <p>
+        How to declare the arrays ? 
+        <h4 id="declaration_of_arrays"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to fetch the first element of the array ?
+        <h4 id="access_first_element"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to fetch the second element of the array ?
+        <h4 id="access_second_element"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to fetch the third element of the array ?
+        <h4 id="access_third_element"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to get the length of the array ?
+        <h4 id="display_length_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to loop the array array ?
+        <h4 id="loop_the_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to add element at the end of the array ?
+        <h4 id="add_element_at_the_end_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to add more element at the end of the array ?
+        <h4 id="add_more_element_at_the_end_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to declare the arrays with alphabets ? 
+        <h4 id="display_alphabets_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to sort the arrays with alphabets ? 
+        <h4 id="display_sorted_alphabets_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to reverse the arrays with alphabets ? 
+        <h4 id="display_reverse_array"> 
+        </h4>
+    </p>
+<hr>      
+    <p>
+        How to declare the arrays with numbers ? 
+        <h4 id="display_number_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to find the maximum number from the arrays ? 
+        <h4 id="display_maximum_number"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to find the minimum number from the arrays ? 
+        <h4 id="display_minimum_number"> 
+        </h4>
+    </p>
+
+    <h3 style="background-color: red; font-size: 23px;">
+        ADDITIONAL ACTIVITY
+    </h3>
+    <p>
+        How to add element at the start of the array ? Hint use unshift method
+        <h4 id="add_element_at_the_start_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to add more element at the start of the array ? Hint use unshift method
+        <h4 id="add_more_element_at_the_start_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to remove element from the start of the array ? Hint use shift method
+        <h4 id="remove_element_from_start_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to remove element from the end of the array ? Hint use pop method
+        <h4 id="remove_element_from_end_of_array"> 
+        </h4>
+    </p>
+<hr>
+    <p>
+        How to merge two arrays ? Hint define two arrays and then use concat method for eg - array1.concat(array2)
+        <h4 id="merge_two_arrays"> 
+        </h4>
+    </p>
+
+
+    <script>
+        var fruits=["apple","orange","grape"]
+        console.log(fruits)
+        document.getElementById("declaration_of_arrays").innerHTML=fruits
+
+        console.log(fruits[0])
+        document.getElementById("access_first_element").innerHTML=fruits[0]
+        console.log(fruits[1])
+        document.getElementById("access_second_element").innerHTML=fruits[1]
+        console.log(fruits[2])
+        document.getElementById("access_third_element").innerHTML=fruits[2]
+
+        console.log(fruits.length)
+        document.getElementById("display_length_of_array").innerHTML=fruits.length
+
+        a=""
+        for(i=0;i<fruits.length;i++){
+            console.log(fruits[i])
+            a=a+fruits[i]+"<br>"
+        }
+        document.getElementById("loop_the_array").innerHTML=a
+
+        fruits.push("lemon")
+        console.log(fruits)
+        document.getElementById("add_element_at_the_end_of_array").innerHTML=fruits
+
+        fruits.push("guava")
+        console.log(fruits)
+        document.getElementById("add_more_element_at_the_end_of_array").innerHTML=fruits
+
+        var alphabets=["c","e","b","d","a"]
+        console.log(alphabets)
+        document.getElementById("display_alphabets_array").innerHTML=alphabets
+
+        alphabets.sort()
+        console.log(alphabets)
+        document.getElementById("display_sorted_alphabets_array").innerHTML=alphabets
+
+        alphabets.reverse()
+        console.log(alphabets)
+        document.getElementById("display_reverse_array").innerHTML=alphabets
+
+        var numbers=["34","63","239","43","1"]
+        console.log(numbers)
+        document.getElementById("display_number_array").innerHTML=numbers
+
+        var number=Math.max.apply(Math,numbers)
+        console.log(number)
+        document.getElementById("display_maximum_number").innerHTML=number
+
+        var number=Math.min.apply(Math,numbers)
+        console.log(number)
+        document.getElementById("display_minimum_number").innerHTML=number
+
+    </script>
